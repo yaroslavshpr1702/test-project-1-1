@@ -22,7 +22,7 @@ function MainContent() {
 
                     <button className="product__description items">items left: 12</button>
 
-                    <p>us$25.89</p><h2 className="new-price">$0.00 FREE</h2>
+                    <p className="price">US$25.89</p><h2 className="new-price">$0.00 FREE</h2>
                     <button className="product__description select_button">Select</button>
                 </div>
             </div>

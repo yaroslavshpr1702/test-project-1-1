@@ -181,6 +181,9 @@ button {
 .product__description {
   width: 480px;
 }
+.price {
+  text-decoration: line-through;
+}
 
 /* Product Overview (MainContent) */
 
@@ -208,13 +211,6 @@ button {
 
 .read_more{
   color: rgba(0, 0, 0, 0.6);
-}
-
-/* How it works */
-
-.app__how_it_work {
-  position: relative;
-  left: 50px;
 }
 
 /* Step 1 */
@@ -255,6 +251,19 @@ button {
   position: relative;
   display: flex;
 
+}
+
+/* Step bar */
+
+.step {
+  left: 50px;
+}
+
+/* How it works */
+
+.app__how_it_work {
+  position: relative;
+  left: 50px;
 }
 
 .steps {

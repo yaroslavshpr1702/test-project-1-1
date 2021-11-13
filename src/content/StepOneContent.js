@@ -1,7 +1,7 @@
 function StepOneContent() {
     return(
         <div className="app__step_one">
-            <img className="app__step_one step" src="/images/v_step_one.png" alt="step_1"/>
+            <img className="step_bar" src="/images/v_step_one.png" alt="step_1"/>
             <div className="info">
                 <h1>Step 1</h1>
                 <h1>Lorem ipsum dolor sit amet</h1>
@@ -12,7 +12,7 @@ function StepOneContent() {
                 </ol>
                 <button>Agree and continue</button>
             </div>
-            <img src="" alt="bg_img"/>
+            <img className="picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
         </div>
     );
 }

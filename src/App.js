@@ -17,11 +17,14 @@ function App() {
         <img className="banner_picture" src="/images/banner_picture.png" alt="header_img"/>
       </header>
       <MainContent/>
-      {/* <StepOneContent/>
+      {/* 
+      <MainContent/>
+      <StepOneContent/>
       <StepTwoContent/>
       <StepThreeContent/>
       <StepFourContent/>
-      <StepFiveContent/> */}
+      <StepFiveContent/>
+      */}
       <div className="app__how_it_work">
         <h1>How does it work?</h1>
         <div className="steps">
@@ -55,7 +58,7 @@ function App() {
         </div>
       </div>
       <footer className="app__footer">
-        <div className="info">
+        <div className="footer_info">
           <ul>
             <li><b>Privacy and Terms</b></li>
             <li>Privacy Policy</li>

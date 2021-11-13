@@ -48,7 +48,7 @@ function MainContent() {
                     <li>Slips on easily, absorbs quickly.</li>
                     <li>Helps strengthen skin’s own moisture barrier so more moisture stays in. Skin that holds onto moisture has a youthful-looking glow.</li>
                 </ul>
-                <p className="read_more">Read more...</p>
+                <a className="read_more">Read more...</a>
                 <h3>Key Ingredients</h3>
                 <p>Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
             </div>

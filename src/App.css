@@ -44,6 +44,12 @@ p, li {
   color: rgba(0, 0, 0, 0.6);
 }
 
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Footer */
 
 .app__footer.info {
@@ -176,7 +182,7 @@ button {
   width: 480px;
 }
 
-/* Product Overview */
+/* Product Overview (MainContent) */
 
 .product_overview {
   position: relative;
@@ -211,9 +217,51 @@ button {
   left: 50px;
 }
 
+/* Step 1 */
+
+.app__step_one {
+  position: relative;
+  display: flex;
+  
+}
+
+/* Step 2 */
+
+.app__step_two {
+  position: relative;
+  display: flex;
+
+}
+
+/* Step 3 */
+
+.app__step_three {
+  position: relative;
+  display: flex;
+
+}
+
+/* Step 4 */
+
+.app__step_four {
+  position: relative;
+  display: flex;
+
+}
+
+/* Step 5 */
+
+.app__step_five {
+  position: relative;
+  display: flex;
+
+}
+
 .steps {
   display: flex;
   align-items: center;
+
+  width: 1280px;
 }
 .steps a {
   width: 180px;
@@ -227,7 +275,9 @@ button {
   box-shadow: 0px 10px 20px rgba(94, 94, 94, 0.1);
   border-radius: 50%;
 }
-
+.steps .rights,.steps a {
+  margin: 0 23px;
+}
 /*.app__step_one, .app__step_two, .app__step_three, .app__step_four, .app__step_five {
   visibility: hidden;
 }*/

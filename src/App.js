@@ -26,14 +26,20 @@ function App() {
         <h1>How does it work?</h1>
         <div className="steps">
           <a><img src="/images/step_ico_one.png"/></a>
-          <img src="/images/right.png"/>
+          <img className="rights" src="/images/right.png"/>
           <a><img src="/images/step_ico_two.png"/></a>
-          <img src="/images/right.png"/>
+          <img className="rights" src="/images/right.png"/>
           <a><img src="/images/step_ico_three.png"/></a>
-          <img src="/images/right.png"/>
+          <img className="rights" src="/images/right.png"/>
           <a><img src="/images/step_ico_four.png"/></a>
-          <img src="/images/right.png"/>
+          <img className="rights" src="/images/right.png"/>
           <a><img src="/images/step_ico_five.png"/></a>
+        </div>
+        <div className="steps">
+          <p>Choose product</p>
+          <p>Buy product</p>
+          <p>Test and share review</p>
+          <p>Get 100% money back</p>
         </div>
       </div>
       <footer className="app__footer">

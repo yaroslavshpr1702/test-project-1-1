@@ -1,7 +1,8 @@
 function StepFourContent() {
     return(
         <div className="app__step_four">
-            <div className="app__step_four info">
+            <img className="app__step_four step" src="/images/v_step_four.png" alt="step_4"/>
+            <div className="info">
                 <h1>Step 4</h1>
                 <h1>How to Buy a Product with 100% BONUS!</h1>
                 <ul>

@@ -1,7 +1,6 @@
 function MainContent() {
     return(
         <div className="app__content">
-            
             <div className="app__content product">
                 <div className="product__gallery">
                     <div className="image_selector">
@@ -14,16 +13,27 @@ function MainContent() {
                     <img className="gallery product_image" src="/images/g_img_1.png" alt="imgMain"/>
                 </div>
                 <div className="product__description">
-                    <h3>Best seller</h3>
-                    <p>(1731 reviews)</p>
+                    <div className="product_top">
+                        <h3>Best seller</h3>
+                        <div className="product_rating">
+                            <img className="rating_stars" src="/images/stars.png"/>
+                            <p>(1731 reviews)</p>
+                        </div>
+                    </div>
                     <h2>Acne Treatment Cystic Acne heals, repairs & renews</h2>
                     <h3>Description:</h3>
                     <p class="description">Addictively refreshing gel-cream leaves skin plump, dewy, glowing.</p>
 
-                    <button className="product__description items">items left: 12</button>
+                    <button className="items">items left: 12</button>
 
-                    <p className="price">US$25.89</p><h2 className="new-price">$0.00 FREE</h2>
-                    <button className="product__description select_button">Select</button>
+                    <div className="buy_product">
+                        <div className="prices">
+                            <p className="product__price">us$25.89</p>
+                            <h2 className="product__new_price">$0.00 FREE</h2>
+                        </div>
+                        <button className="select_button">Select</button>
+                        <img className="amazon_prime_logo" src="/images/amazon_prime_logo.png" alt="amazon_p_logo"/>
+                    </div>
                 </div>
             </div>
             <div className="product_overview">
@@ -38,7 +48,7 @@ function MainContent() {
                     <li>Slips on easily, absorbs quickly.</li>
                     <li>Helps strengthen skin’s own moisture barrier so more moisture stays in. Skin that holds onto moisture has a youthful-looking glow.</li>
                 </ul>
-                <p className="read_more"><b>Read more...</b></p>
+                <p className="read_more">Read more...</p>
                 <h3>Key Ingredients</h3>
                 <p>Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
             </div>

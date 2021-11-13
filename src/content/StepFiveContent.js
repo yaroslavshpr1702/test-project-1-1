@@ -10,7 +10,7 @@ function StepFiveContent() {
                 <p>(If you have any questions, you can ask them to our Manager)</p>
                 <button>provide order id</button>
             </div>
-            <img src="" alt="bg_img"/>
+            <img src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
         </div>
     )
 }

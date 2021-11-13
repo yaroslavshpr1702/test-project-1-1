@@ -14,7 +14,7 @@ function StepFourContent() {
                 <button>Get Offer</button>
                 <p>I don't like offer terms</p>
             </div>
-            <img src="" alt="bg_img"/>
+            <img src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
         </div>
     )
 }

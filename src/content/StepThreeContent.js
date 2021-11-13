@@ -9,7 +9,7 @@ function StepThreeContent() {
                 <button className="accept_button">Yes, i have</button>
                 <button className="disaccept_button">no, i don’t have</button>
             </div>
-            <img src="" alt="bg_img"/>
+            <img src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
         </div>
     )
 }

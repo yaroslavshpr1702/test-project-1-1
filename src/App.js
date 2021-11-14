@@ -1,10 +1,4 @@
 import './App.css';
-import MainContent from './content/MainContent'
-import StepOneContent from './content/StepOneContent'
-import StepTwoContent from './content/StepTwoContent'
-import StepThreeContent from './content/StepThreeContent'
-import StepFourContent from './content/StepFourContent'
-import StepFiveContent from './content/StepFiveContent'
 
 import { React, Component } from 'react';
 import ReactDOM from 'react-dom';
@@ -12,21 +6,24 @@ import ReactDOM from 'react-dom';
 //function App() {
 class App extends Component {
   GetStep(step) {
+    var isVertical = true;
+    if (window.innerWidth < 321) {
+      console.log('Window (T) width:',window.innerWidth);
+      isVertical = false;
+    }
+    else {
+      console.log('Window (PC) width:',window.innerWidth);
+      isVertical = true;
+    };
+    console.log(isVertical);
+
     switch (step) {
       case 1:
         console.log('Step One:', step);
 
-        // document.querySelector('.step_one').setAttribute('visibility','visible')
-        // document.querySelector('.content').setAttribute('visibility','hidden')
-        // console.log(document.querySelector('.step_one').getAttribute('visibility'));
-        // console.log(document.querySelector('.content').getAttribute('visibility'));
-        
-        // document.querySelector('.step_one').classList.toggle('step_one_shown');
-        // document.querySelector('.step_two').classList.toggle('step_two_hidden');
-
         var element = (
           <div className="content__step_one step_one">
-            <img className="step_one__step_bar step_bar" src="/images/v_step_one.png" alt="step_1"/>
+            <img className="step_one__step_bar step_bar" alt="step_1"/>
             <div className="step_one__info info">
                 <h1>Step 1</h1>
                 <h1>Lorem ipsum dolor sit amet</h1>
@@ -40,10 +37,21 @@ class App extends Component {
             <img className="step_one__picture_giveaway picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
           </div>
         );
-
-        document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-        document.querySelector('.app__footer').setAttribute('style','top: 1275px')
         ReactDOM.render(element, document.querySelector('.content'));
+
+
+        console.log('step bar image:',document.querySelector('.step_bar').getAttribute('width'));
+
+        if (isVertical) {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+        }
+        else {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+        }
+        
+        //document.querySelector('.step_bar').setAttribute('src','/images/v_step_one.png');
 
         break;
       case 2:
@@ -51,7 +59,7 @@ class App extends Component {
 
         var element = (
           <div className="content__step_two step_two">
-            <img className="step_two__step_bar step_bar" src="/images/v_step_two.png" alt="step_2"/>
+            <img className="step_two__step_bar step_bar" alt="step_2"/>
             <div className="step_two__info info">
                 <h1>Step 2</h1>
                 <h1>Share Facebook post</h1>
@@ -62,10 +70,14 @@ class App extends Component {
             <img className="step_two__press_here_block press_here_block" src="/images/press_here_block.png" alt="press_here_block_img"/>
           </div>
         );
+        ReactDOM.render(element, document.querySelector('.content'));
 
+        if (isVertical) {}
+        else {};
         document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
         document.querySelector('.app__footer').setAttribute('style','top: 1275px')
-        ReactDOM.render(element, document.querySelector('.content'));
+
+        //document.querySelector('.step_bar').setAttribute('src','/images/v_step_two.png');
 
         break;
       case 3:
@@ -73,7 +85,7 @@ class App extends Component {
         
         var element = (
           <div className="content__step_three step_three">
-            <img className="step_three__step_bar step_bar" src="/images/v_step_three.png" alt="step_3"/>
+            <img className="step_three__step_bar step_bar" alt="step_3"/>
             <div className="step_three__info info">
                 <h1>Step 3</h1>
                 <h1>Amazon Prime</h1>
@@ -88,10 +100,18 @@ class App extends Component {
             <img className="step_three__picture_giveaway picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
           </div>
         );
-  
-        document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-        document.querySelector('.app__footer').setAttribute('style','top: 1275px')
         ReactDOM.render(element, document.querySelector('.content'));
+  
+        if (isVertical) {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+        }
+        else {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+        };
+
+        //document.querySelector('.step_bar').setAttribute('src','/images/v_step_three.png');
 
         break;
       case 4:
@@ -99,7 +119,7 @@ class App extends Component {
         
         var element = (
           <div className="content__step_four step_four">
-            <img className="step_four__step_bar step_bar" src="/images/v_step_four.png" alt="step_4"/>
+            <img className="step_four__step_bar step_bar" alt="step_4"/>
             <div className="step_four__info info">
                 <h1>Step 4</h1>
                 <h1>How to Buy a Product with 100% BONUS!</h1>
@@ -119,10 +139,18 @@ class App extends Component {
             <img className="step_four__picture_giveaway picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
           </div>
         );
-  
-        document.querySelector('.how_it_work').setAttribute('style','top: 875px;');
-        document.querySelector('.app__footer').setAttribute('style','top: 1315px')
         ReactDOM.render(element, document.querySelector('.content'));
+  
+        if (isVertical) {
+          document.querySelector('.how_it_work').setAttribute('style','top: 875px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1315px');
+        }
+        else {
+          document.querySelector('.how_it_work').setAttribute('style','top: 875px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1315px');
+        };
+
+        //document.querySelector('.step_bar').setAttribute('src','/images/v_step_four.png');
           
         break;
       case 5:
@@ -130,7 +158,7 @@ class App extends Component {
         
         var element = (
           <div className="content__step_five step_five">
-            <img className="step_five__step_bar step_bar" src="/images/v_step_five.png" alt="step_5"/>
+            <img className="step_five__step_bar step_bar" alt="step_5"/>
             <div className="step_five__info info">
                 <h1>Step 5</h1>
                 <h1>Buy and Provide order ID to our Manager</h1>
@@ -143,20 +171,23 @@ class App extends Component {
             <img className="step_five__picture_giveaway picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>
           </div>
         );
-  
-        document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-        document.querySelector('.app__footer').setAttribute('style','top: 1275px;');
         ReactDOM.render(element, document.querySelector('.content'));
+        
+        if (isVertical) {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px;');
+        }
+        else {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px;');
+        };
+
+        //document.querySelector('.step_bar').setAttribute('src','/images/v_step_five.png');
           
         break;
     }
   };
 
-  Check() {
-    for (var i = 0; i < 5; i++) {
-      console.log('hi');
-    }
-  };
   ReadMoreFunction(e) {
     e.preventDefault();
     console.log('Read more');
@@ -254,19 +285,19 @@ class App extends Component {
               <p>Choose product</p>
             </div>
           </div>
-          <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+          <img className="how_it_work__rights rights_separators" src="/images/right.png" alt="right"/>
           <div className="how_it_work__step_rows step_rows">
-          <div className="how_it_work__step step">
-            <button onClick={() => {this.GetStep(3)}}><img src="/images/step_ico_three.png" alt="step_three"/></button>
-            <p>Buy product</p>
-          </div>
+            <div className="how_it_work__step step">
+              <button onClick={() => {this.GetStep(3)}}><img src="/images/step_ico_three.png" alt="step_three"/></button>
+              <p>Buy product</p>
+            </div>
             <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
           <div className="how_it_work__step step">
             <button onClick={() => {this.GetStep(4)}}><img src="/images/step_ico_four.png" alt="step_four"/></button>
             <p>Test and share review</p>
           </div>
           </div>
-          <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+          <img className="how_it_work__rights rights_separators" src="/images/right.png" alt="right"/>
           <div className="how_it_work__step step">
             <button onClick={() => {this.GetStep(5)}}><img src="/images/step_ico_five.png" alt="step_five"/></button>
             <p>Get 100% money back</p>

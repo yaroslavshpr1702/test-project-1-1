@@ -10,8 +10,8 @@ function MainContent() {
     };
 
     return(
-        <div className="app__content">
-            <div className="app__content product">
+        <div className="content__main_page main_page">
+            <div className="main_page_product product">
                 <div className="product__gallery gallery">
                     <div className="image_selector">
                         <a><img className="img_arrows" src="/images/arrow_up.png" alt="arrow_up"/></a>
@@ -46,7 +46,7 @@ function MainContent() {
                     </div>
                 </div>
             </div>
-            <div className="product_overview">
+            <div className="product__overview overview">
                 <h1>Overview</h1>
                 <h3>Who It's For</h3>
                 <p>Very Dry, Dry, Dry Combination Skin (Type 1, 2)</p>

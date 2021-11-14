@@ -101,6 +101,14 @@ button {
   top: 11px;
 }
 
+/* Container for steps */
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /* Footer */
 
 .app__footer {
@@ -108,13 +116,9 @@ button {
 
   width: 1280px;
   height: 228px;
-}
-.footer.text_hide {
   top: 1698px;
 }
-.footer.text_show {
-  top: 1980px;
-}
+
 .footer_info {
   display: flex;
   justify-content: flex-start;
@@ -132,7 +136,7 @@ button {
 .footer_info li {
   color: rgba(0, 0, 0, 1);
 }
-.app__footer p {
+.footer p {
   margin-left: 50px;
 }
 .accept_button {
@@ -145,12 +149,68 @@ button {
   margin-left: 21px;
 }
 
-.app__content {
+/* How it works */
+
+.how_it_work {
+  position: absolute;
+  left: 50px;
+}
+.how_it_work.text_hide {
+  top: 1275px;
+}
+.how_it_work.text_show {
+  top: 1557px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+
+  width: 1280px;
+}
+.steps button {
+  min-width: 180px;
+  min-height: 180px;
+  
+  max-width: 180px;
+  max-height: 180px;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(94, 94, 94, 0.1);
+  border-radius: 50%;
+}
+.step_rows {
+  display: flex;
+  align-items: center;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 212px;
+  width: 180px;
+}
+.rights {
+  width: 24px;
+  height: 16.52px;
+}
+.steps .rights, .steps a {
+  margin: 0 23px;
+}
+
+.main_page {
   position: absolute;
 
   width: 1280px;
   height: 1132px;
   top: 176px;
+
+  visibility: visible;
 }
 
 /* Product */
@@ -285,12 +345,12 @@ button {
   width: 380px;
   border-top: 1px solid rgba(196, 196, 196, 1);
 }
-.product__price {
+.price {
   text-decoration: line-through;
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.product__new_price {
+.sells {
   margin-left: 10px;
   margin-bottom: 0;
 }
@@ -301,7 +361,7 @@ button {
 
 /* Product Overview (MainContent) */
 
-.product_overview {
+.overview {
   position: absolute;
   top: 650px;
   left: 50px;
@@ -310,20 +370,20 @@ button {
   height: 422px;
 }
 
-.product_overview h1 {
+.overview h1 {
   margin: 0;
 }
-.product_overview h3 {
+.overview h3 {
   margin: 20px 0 0
 }
-.product_overview p {
+.overview p {
   margin: 10px 0;
   width: 650px;
 }
-.product_overview ul {
+.overview ul {
   padding: 0 17.5px;
 }
-.product_overview li {
+.overview li {
   margin: 10px 0;
 }
 .read_more{
@@ -360,7 +420,7 @@ button {
 
 /* Step 1 */
 
-.app__step_one {
+.step_one {
   position: absolute;
   display: flex;
   
@@ -369,20 +429,16 @@ button {
 
   width: 1180px;
   height: 560px;
-
-  visibility: hidden;
 }
 
 /* Step 2 */
 
-.app__step_two {
+.step_two {
   position: absolute;
   display: flex;
   
   top: 289px;
   left: 67px;
-  
-  visibility: hidden;
 }
 .facebook_post {
   width: 478px;
@@ -401,14 +457,12 @@ button {
 
 /* Step 3 */
 
-.app__step_three {
+.step_three {
   position: absolute;
   display: flex;
 
   top: 289px;
   left: 67px;
-  
-  visibility: hidden;
 }
 .step_three__buttons {
   display: flex;
@@ -416,14 +470,12 @@ button {
 
 /* Step 4 */
 
-.app__step_four {
+.step_four {
   position: absolute;
   display: flex;
 
   top: 289px;
   left: 67px;
-  
-  visibility: hidden;
 }
 .buy_product_ways {
   padding-left: 15px;
@@ -448,14 +500,12 @@ button {
 
 /* Step 5 */
 
-.app__step_five {
+.step_five {
   position: absolute;
   display: flex;
 
   top: 289px;
   left: 67px;
-  
-  visibility: hidden;
 }
 .amazon_button {
   margin-bottom: 56px;
@@ -480,66 +530,3 @@ button {
   height: 490px;
   width: 48px;
 }
-
-/* Steps' toggles */
-
-
-
-/* How it works */
-
-.how_it_work {
-  position: absolute;
-  left: 50px;
-}
-.how_it_work.text_hide {
-  top: 1275px;
-}
-.how_it_work.text_show {
-  top: 1557px;
-}
-
-.steps {
-  display: flex;
-  align-items: center;
-
-  width: 1280px;
-}
-.steps button {
-  min-width: 180px;
-  min-height: 180px;
-  
-  max-width: 180px;
-  max-height: 180px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  background: #FFFFFF;
-  box-shadow: 0px 10px 20px rgba(94, 94, 94, 0.1);
-  border-radius: 50%;
-
-  /*border:none*/
-}
-.step_rows {
-  display: flex;
-  align-items: center;
-}
-.step {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  height: 212px;
-  width: 180px;
-}
-.rights {
-  width: 24px;
-  height: 16.52px;
-}
-.steps .rights, .steps a {
-  margin: 0 23px;
-}
-/*.app__step_one, .app__step_two, .app__step_three, .app__step_four, .app__step_five {
-  visibility: hidden;
-}*/

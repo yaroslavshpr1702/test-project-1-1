@@ -39,16 +39,13 @@ class App extends Component {
         );
         ReactDOM.render(element, document.querySelector('.content'));
 
-
-        console.log('step bar image:',document.querySelector('.step_bar').getAttribute('width'));
-
         if (isVertical) {
           document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
           document.querySelector('.app__footer').setAttribute('style','top: 1275px');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+          document.querySelector('.how_it_work').setAttribute('style','top: 500px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1060px');
         }
         
         //document.querySelector('.step_bar').setAttribute('src','/images/v_step_one.png');
@@ -67,15 +64,20 @@ class App extends Component {
                 <button>continue</button>
             </div>
             <img className="step_two__facebook_post facebook_post" src="/images/facebook_post.png" alt="bg_img"/>
-            <img className="step_two__press_here_block press_here_block" src="/images/press_here_block.png" alt="press_here_block_img"/>
+            <img className="step_two__press_here_block press_here_arrow" alt="press_here_arrow_img"/>
+            <p className="step_two__press_here_block press_here_text">Press Here</p>
           </div>
         );
         ReactDOM.render(element, document.querySelector('.content'));
 
-        if (isVertical) {}
-        else {};
-        document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-        document.querySelector('.app__footer').setAttribute('style','top: 1275px')
+        if (isVertical) {
+          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+        }
+        else {
+          document.querySelector('.how_it_work').setAttribute('style','top: 750px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1310px');
+        };
 
         //document.querySelector('.step_bar').setAttribute('src','/images/v_step_two.png');
 
@@ -107,8 +109,8 @@ class App extends Component {
           document.querySelector('.app__footer').setAttribute('style','top: 1275px');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-          document.querySelector('.app__footer').setAttribute('style','top: 1275px');
+          document.querySelector('.how_it_work').setAttribute('style','top: 455px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1015px');
         };
 
         //document.querySelector('.step_bar').setAttribute('src','/images/v_step_three.png');
@@ -146,8 +148,8 @@ class App extends Component {
           document.querySelector('.app__footer').setAttribute('style','top: 1315px');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 875px;');
-          document.querySelector('.app__footer').setAttribute('style','top: 1315px');
+          document.querySelector('.how_it_work').setAttribute('style','top: 665px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1225px');
         };
 
         //document.querySelector('.step_bar').setAttribute('src','/images/v_step_four.png');
@@ -178,8 +180,8 @@ class App extends Component {
           document.querySelector('.app__footer').setAttribute('style','top: 1275px;');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 835px;');
-          document.querySelector('.app__footer').setAttribute('style','top: 1275px;');
+          document.querySelector('.how_it_work').setAttribute('style','top: 557px;');
+          document.querySelector('.app__footer').setAttribute('style','top: 1137px;');
         };
 
         //document.querySelector('.step_bar').setAttribute('src','/images/v_step_five.png');

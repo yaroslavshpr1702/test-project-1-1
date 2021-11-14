@@ -462,13 +462,27 @@ button {
 
   margin-left: 23px;
 }
-.press_here_block {
+.press_here_arrow {
   position: absolute;
+
+  content: url("content/press_here_arrow_1.png");
 
   top: 453px;
   left: 551px;
   width: 257px;
   height: 58px;
+}
+.press_here_text {
+  position: absolute;
+
+  top: 469.78px;
+  left: 700px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  
+  color: #E40000;
 }
 
 /* Step 3 */
@@ -861,8 +875,8 @@ button {
   .step_one {
     flex-direction: column;
 
-    top: 283px;
-    left: 67px;
+    top: 180px;
+    left: 15px;
 
     width: 1180px;
     height: 560px;
@@ -873,20 +887,30 @@ button {
   .step_two {
     flex-direction: column;
 
-    top: 289px;
-    left: 67px;
+    top: 180px;
+    left: 15px;
   }
   .facebook_post {
-    width: 478px;
-    height: 443px;
+    width: 243px;
+    height: 225px;
 
     margin-left: 23px;
   }
-  .press_here_block {
-    top: 453px;
-    left: 551px;
-    width: 257px;
-    height: 58px;
+  .press_here_arrow {
+    content: url("content/press_here_arrow_3.png");
+
+    left: 217px;
+    top: 613px;
+    
+    width: 115px;
+    height: 26px;
+  }
+  .press_here_text {
+    top: 644px;
+    left: 117px;
+  
+    font-size: 18px;
+    line-height: 22px;
   }
 
   /* Step 3 */
@@ -894,8 +918,8 @@ button {
   .step_three {
     flex-direction: column;
     
-    top: 289px;
-    left: 67px;
+    top: 180px;
+    left: 15px;
   }
 
   /* Step 4 */
@@ -903,8 +927,8 @@ button {
   .step_four {
     flex-direction: column;
     
-    top: 289px;
-    left: 67px;
+    top: 180px;
+    left: 15px;
   }
   .buy_product_ways {
     padding-left: 15px;
@@ -924,8 +948,8 @@ button {
   .step_five {
     flex-direction: column;
     
-    top: 289px;
-    left: 67px;
+    top: 180px;
+    left: 15px;
   }
   .amazon_button {
     margin-bottom: 56px;
@@ -934,14 +958,14 @@ button {
   /* Steps' items */
 
   .info {
-    width: 480px;
+    width: 280px;
 
-    margin-left: 135px;
+    margin-left: 0;
   }
 
   .picture_giveaway {
-    width: 477px;
-    height: 501px;
+    width: 0;
+    height: 0;
   }
 
   /* Step bar */

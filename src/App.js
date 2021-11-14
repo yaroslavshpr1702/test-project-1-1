@@ -11,23 +11,21 @@ import { React, Component } from 'react';
 //function App() {
 class App extends Component {
   GetStep(step) {
-    console.log('There is step:',step)
-
     switch (step) {
       case 1:
-        console.log('Step One');
+        console.log('Step One:', step);
         break;
       case 2:
-        console.log('Step Two');
+        console.log('Step Two: ', step);
         break;
       case 3:
-        console.log('Step Three');
+        console.log('Step Three: ', step);
         break;
       case 4:
-        console.log('Step Four');
+        console.log('Step Four: ', step);
         break;
       case 5:
-        console.log('Step Five');
+        console.log('Step Five: ', step);
         break;
     }
   };
@@ -53,12 +51,12 @@ class App extends Component {
       <StepThreeContent/>
       <StepFourContent/>
       <StepFiveContent/>
-      <div className="app__how_it_work how_it_work">
+      <div className="app__how_it_work how_it_work text_hide">
         <h1>How does it work?</h1>
         <div className="how_it_work__steps steps">
           <div className="how_it_work__step_rows step_rows">
             <div className="how_it_work__step step">
-              <button onClick={this.GetStep(1)}><img src="/images/step_ico_one.png" alt="step_one"/></button>
+              <button onClick={() => {this.GetStep(1)}}><img src="/images/step_ico_one.png" alt="step_one"/></button>
             </div>
             <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
             <div className="how_it_work__step step">
@@ -85,7 +83,7 @@ class App extends Component {
           </div>
         </div>
       </div>
-      <footer className="app__footer footer">
+      <footer className="app__footer footer text_hide">
         <div className="footer_info">
           <ul>
             <li><b>Privacy and Terms</b></li>

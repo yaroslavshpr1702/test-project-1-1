@@ -64,6 +64,7 @@ button {
   color: rgba(255, 255, 255, 1);
   background: #000000;
   border-radius: 5px;
+  border: none;
 }
 
 /* Header */
@@ -107,7 +108,12 @@ button {
 
   width: 1280px;
   height: 228px;
+}
+.footer.text_hide {
   top: 1698px;
+}
+.footer.text_show {
+  top: 1980px;
 }
 .footer_info {
   display: flex;
@@ -145,8 +151,6 @@ button {
   width: 1280px;
   height: 1132px;
   top: 176px;
-
-  visibility: hidden;
 }
 
 /* Product */
@@ -329,13 +333,29 @@ button {
 
   text-align: left;
   text-transform: none;
+  text-decoration-line: none;
   font-size: 18px;
   font-weight: bold;
 
   color: rgba(0, 0, 0, 0.6);
 }
-.hiden_text {
+.not_toggled {
+  visibility: visible;
+}
+.toggled {
   visibility: hidden;
+}
+.hidden_text {
+  position: absolute;
+  top: 390px;
+  
+  visibility: hidden;
+}
+.hidden_text.text_hide {
+  visibility: hidden;
+}
+.hidden_text.text_show {
+  visibility: visible;
 }
 
 /* Step 1 */
@@ -461,12 +481,21 @@ button {
   width: 48px;
 }
 
+/* Steps' toggles */
+
+
+
 /* How it works */
 
-.app__how_it_work {
+.how_it_work {
   position: absolute;
   left: 50px;
+}
+.how_it_work.text_hide {
   top: 1275px;
+}
+.how_it_work.text_show {
+  top: 1557px;
 }
 
 .steps {

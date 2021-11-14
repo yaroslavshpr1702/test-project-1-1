@@ -1,12 +1,17 @@
 function MainContent() {
-    function ReadMoreFunction() {
+    function ReadMoreFunction(e) {
+        e.preventDefault();
         console.log('Read more');
-        //document.getElementsByClassName('hiden_text').length;
+
+        document.querySelector('.hidden_text').classList.toggle('text_show');
+        document.querySelector('.read_more').classList.toggle('toggled');
+        document.querySelector('.footer').classList.toggle('text_show');
+        document.querySelector('.how_it_work').classList.toggle('text_show');
     };
 
     return(
         <div className="app__content">
-            <div className="app__content product ">
+            <div className="app__content product">
                 <div className="product__gallery gallery">
                     <div className="image_selector">
                         <a><img className="img_arrows" src="/images/arrow_up.png" alt="arrow_up"/></a>
@@ -53,9 +58,19 @@ function MainContent() {
                     <li>Slips on easily, absorbs quickly.</li>
                     <li>Helps strengthen skin’s own moisture barrier so more moisture stays in. Skin that holds onto moisture has a youthful-looking glow.</li>
                 </ul>
-                <a href="#" className="read_more" onClick={ReadMoreFunction}>Read more...</a>
-                <h3 className="hiden_text">Key Ingredients</h3>
-                <p className="hiden_text">Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
+                <a href="#" className="read_more not_toggled" onClick={ReadMoreFunction}>Read more...</a>
+                <div className="hidden_text text_hide">
+                    <h3>Key Ingredients</h3>
+                    <p>Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
+                    <div className="buy_product">
+                        <div className="product__prices">
+                            <p className="product__price">us$25.89</p>
+                            <h2 className="product__new_price">$0.00 FREE</h2>
+                        </div>
+                        <button className="select_button">Select</button>
+                        <img className="amazon_prime_logo" src="/images/amazon_prime_logo.png" alt="amazon_p_logo"/>
+                    </div>
+                </div>
             </div>
         </div>
     );

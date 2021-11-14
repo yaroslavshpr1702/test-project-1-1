@@ -1,6 +1,6 @@
 function StepThreeContent() {
     return(
-        <div className="app__step_three step_three">
+        <div className="app__step_three step_three step_hidden_hidden">
             <img className="step_three__step_bar step_bar" src="/images/v_step_three.png" alt="step_3"/>
             <div className="step_three__info info">
                 <h1>Step 3</h1>

@@ -1,6 +1,6 @@
 function StepOneContent() {
     return(
-        <div className="app__step_one step_one">
+        <div className="app__step_one step_one step_one_hidden">
             <img className="step_one__step_bar step_bar" src="/images/v_step_one.png" alt="step_1"/>
             <div className="step_one__info info">
                 <h1>Step 1</h1>

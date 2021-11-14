@@ -1,6 +1,6 @@
 function StepFiveContent() {
     return(
-        <div className="app__step_five step_five">
+        <div className="app__step_five step_five step_five_hidden">
             <img className="step_five__step_bar step_bar" src="/images/v_step_five.png" alt="step_5"/>
             <div className="step_five__info info">
                 <h1>Step 5</h1>

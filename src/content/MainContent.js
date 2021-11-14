@@ -1,8 +1,13 @@
 function MainContent() {
+    function ReadMoreFunction() {
+        console.log('Read more');
+        //document.getElementsByClassName('hiden_text').length;
+    };
+
     return(
         <div className="app__content">
-            <div className="app__content product">
-                <div className="product__gallery">
+            <div className="app__content product ">
+                <div className="product__gallery gallery">
                     <div className="image_selector">
                         <a><img className="img_arrows" src="/images/arrow_up.png" alt="arrow_up"/></a>
                         <img className="img_plates" src="/images/g_img_1.png" alt="img1"/>
@@ -10,9 +15,9 @@ function MainContent() {
                         <img className="img_plates" src="/images/g_img_3.png" alt="img3"/>
                         <a><img className="img_arrows" src="/images/arrow_down.png" alt="arrow_down"/></a>
                     </div>
-                    <img className="gallery product_image" src="/images/g_img_1.png" alt="imgMain"/>
+                    <img className="product_image" src="/images/g_img_1.png" alt="imgMain"/>
                 </div>
-                <div className="product__description">
+                <div className="about_product">
                     <div className="product_top">
                         <h3>Best seller</h3>
                         <div className="product_rating">
@@ -22,12 +27,12 @@ function MainContent() {
                     </div>
                     <h2>Acne Treatment Cystic Acne heals, repairs & renews</h2>
                     <h3>Description:</h3>
-                    <p class="description">Addictively refreshing gel-cream leaves skin plump, dewy, glowing.</p>
+                    <p className="description">Addictively refreshing gel-cream leaves skin plump, dewy, glowing.</p>
 
                     <button className="items">items left: 12</button>
 
                     <div className="buy_product">
-                        <div className="prices">
+                        <div className="product__prices">
                             <p className="product__price">us$25.89</p>
                             <h2 className="product__new_price">$0.00 FREE</h2>
                         </div>
@@ -48,9 +53,9 @@ function MainContent() {
                     <li>Slips on easily, absorbs quickly.</li>
                     <li>Helps strengthen skin’s own moisture barrier so more moisture stays in. Skin that holds onto moisture has a youthful-looking glow.</li>
                 </ul>
-                <a className="read_more">Read more...</a>
-                <h3>Key Ingredients</h3>
-                <p>Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
+                <a href="#" className="read_more" onClick={ReadMoreFunction}>Read more...</a>
+                <h3 className="hiden_text">Key Ingredients</h3>
+                <p className="hiden_text">Sunflower Seed Cake, Barley Extract and Cucumber Fruit Extract help strengthen skin’s barrier, improve its resiliency, and balance and retain skin’s moisture levels. Hyaluronic acid acts as a natural moisture magnet/humectant.</p>
             </div>
         </div>
     );

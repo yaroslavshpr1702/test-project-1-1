@@ -2,7 +2,6 @@ body {
   padding: 0;
   margin: 0;
 }
-
 h1 {
   font-family: Proxima Nova;
   font-size: 48px;
@@ -58,6 +57,13 @@ button {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: bold;
+
+  width: 380px;
+  height: 60px;
+
+  color: rgba(255, 255, 255, 1);
+  background: #000000;
+  border-radius: 5px;
 }
 
 /* Header */
@@ -86,7 +92,7 @@ button {
   margin-top: 10px;
   font-size: 24px;
 }
-.banner_picture {
+.header__banner_picture {
   position: absolute;
   width: 440px;
   height: 165px;
@@ -123,15 +129,6 @@ button {
 .app__footer p {
   margin-left: 50px;
 }
-
-button {
-  width: 380px;
-  height: 60px;
-
-  color: rgba(255, 255, 255, 1);
-  background: #000000;
-  border-radius: 5px;
-}
 .accept_button {
   width: 179px;
 }
@@ -148,6 +145,8 @@ button {
   width: 1280px;
   height: 1132px;
   top: 176px;
+
+  visibility: hidden;
 }
 
 /* Product */
@@ -215,12 +214,12 @@ button {
 
 /* About product */
 
-.product__description {
+.about_product {
   margin-left: 50px;
 
   width: 480px;
 }
-.product__description h2 {
+.about_product h2 {
   margin-top: 20px;
 }
 .description {
@@ -273,7 +272,7 @@ button {
   width: 380px;
   margin: 20px 0;
 }
-.prices {
+.product__prices {
   display: flex;
   align-items: flex-end;
 
@@ -323,12 +322,20 @@ button {
 .product_overview li {
   margin: 10px 0;
 }
-
 .read_more{
+  display: block;
+  background: none;
+  border: none;
+
+  text-align: left;
+  text-transform: none;
   font-size: 18px;
   font-weight: bold;
 
   color: rgba(0, 0, 0, 0.6);
+}
+.hiden_text {
+  visibility: hidden;
 }
 
 /* Step 1 */
@@ -342,6 +349,8 @@ button {
 
   width: 1180px;
   height: 560px;
+
+  visibility: hidden;
 }
 
 /* Step 2 */
@@ -352,6 +361,8 @@ button {
   
   top: 289px;
   left: 67px;
+  
+  visibility: hidden;
 }
 .facebook_post {
   width: 478px;
@@ -376,6 +387,8 @@ button {
 
   top: 289px;
   left: 67px;
+  
+  visibility: hidden;
 }
 .step_three__buttons {
   display: flex;
@@ -389,6 +402,8 @@ button {
 
   top: 289px;
   left: 67px;
+  
+  visibility: hidden;
 }
 .buy_product_ways {
   padding-left: 15px;
@@ -419,6 +434,8 @@ button {
 
   top: 289px;
   left: 67px;
+  
+  visibility: hidden;
 }
 .amazon_button {
   margin-bottom: 56px;
@@ -458,9 +475,12 @@ button {
 
   width: 1280px;
 }
-.steps a {
+.steps button {
   min-width: 180px;
   min-height: 180px;
+  
+  max-width: 180px;
+  max-height: 180px;
   
   display: flex;
   justify-content: center;
@@ -469,6 +489,8 @@ button {
   background: #FFFFFF;
   box-shadow: 0px 10px 20px rgba(94, 94, 94, 0.1);
   border-radius: 50%;
+
+  /*border:none*/
 }
 .step_rows {
   display: flex;

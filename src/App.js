@@ -6,58 +6,86 @@ import StepThreeContent from './content/StepThreeContent'
 import StepFourContent from './content/StepFourContent'
 import StepFiveContent from './content/StepFiveContent'
 
-function App() {
+import { React, Component } from 'react';
+
+//function App() {
+class App extends Component {
+  GetStep(step) {
+    console.log('There is step:',step)
+
+    switch (step) {
+      case 1:
+        console.log('Step One');
+        break;
+      case 2:
+        console.log('Step Two');
+        break;
+      case 3:
+        console.log('Step Three');
+        break;
+      case 4:
+        console.log('Step Four');
+        break;
+      case 5:
+        console.log('Step Five');
+        break;
+    }
+  };
+
+  Check() {
+    for (var i = 0; i < 5; i++) {
+      console.log('hi');
+    }
+  }
+  render() {
   return (
     <div className="app">
-      <header className="app__header">
+      <header className="app__header header">
         <div className="header__text">
           <h1>Autumn Giveaways for FREE</h1>
           <p>Participate in Autumn Giveaway and treat yourself to nice and refreshing cosmetics for free</p>
         </div>
-        <img className="banner_picture" src="/images/banner_picture.png" alt="header_img"/>
+        <img className="header__banner_picture" src="/images/banner_picture.png" alt="header_img"/>
       </header>
-      <MainContent/>
-      {/* 
       <MainContent/>
       <StepOneContent/>
       <StepTwoContent/>
       <StepThreeContent/>
       <StepFourContent/>
       <StepFiveContent/>
-      */}
-      <div className="app__how_it_work">
+      <div className="app__how_it_work how_it_work">
         <h1>How does it work?</h1>
-        <div className="steps">
-          <div className="step_rows">
-            <div className="step">
-              <a><img src="/images/step_ico_one.png"/></a>
+        <div className="how_it_work__steps steps">
+          <div className="how_it_work__step_rows step_rows">
+            <div className="how_it_work__step step">
+              <button onClick={this.GetStep(1)}><img src="/images/step_ico_one.png" alt="step_one"/></button>
             </div>
-            <img className="rights" src="/images/right.png"/>
-            <div className="step">
-              <a><img src="/images/step_ico_two.png"/></a>
+            <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+            <div className="how_it_work__step step">
+              <button onClick={() => {this.GetStep(2)}}><img src="/images/step_ico_two.png" alt="step_two"/></button>
               <p>Choose product</p>
             </div>
           </div>
-          <img className="rights" src="/images/right.png"/>
-          <div className="step_rows">
-          <div className="step">
-            <a><img src="/images/step_ico_three.png"/></a>
+          <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+          <div className="how_it_work__step_rows step_rows">
+          <div className="how_it_work__step step">
+            <button onClick={() => {this.GetStep(3)}}><img src="/images/step_ico_three.png" alt="step_three"/></button>
             <p>Buy product</p>
           </div>
-            <img className="rights" src="/images/right.png"/>
-          <div className="step">
-            <a><img src="/images/step_ico_four.png"/></a>
+            <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+          <div className="how_it_work__step step">
+            <button onClick={() => {this.GetStep(4)}}><img src="/images/step_ico_four.png" alt="step_four"/></button>
             <p>Test and share review</p>
           </div>
           </div>
-          <img className="rights" src="/images/right.png"/>
-          <div className="step">
-            <a><img src="/images/step_ico_five.png"/></a>
+          <img className="how_it_work__rights rights" src="/images/right.png" alt="right"/>
+          <div className="how_it_work__step step">
+            <button onClick={() => {this.GetStep(5)}}><img src="/images/step_ico_five.png" alt="step_five"/></button>
             <p>Get 100% money back</p>
           </div>
         </div>
       </div>
-      <footer className="app__footer">
+      <footer className="app__footer footer">
         <div className="footer_info">
           <ul>
             <li><b>Privacy and Terms</b></li>
@@ -79,6 +107,7 @@ function App() {
       
     </div>
   );
+  }
 }
 
 export default App;

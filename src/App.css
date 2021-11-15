@@ -45,7 +45,6 @@ p, li {
 ul {
   padding-left: 0;
 }
-
 button {
   display: flex;
   justify-content: center;
@@ -108,41 +107,6 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-/* Footer */
-
-.app__footer {
-  position: absolute;
-
-  width: 1280px;
-  height: 228px;
-  top: 1698px;
-}
-
-.footer_info {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-
-  height: 166px;
-  padding-left: 50px;
-  background-color: #F5F5F5;
-}
-.footer_info ul {
-  width: 150px;
-  color: rgba(0, 0, 0, 1);
-
-  margin-right: 252px;
-}
-.footer_info li {
-  list-style-type: none;
-  margin-top: 10px;
-
-  color: rgba(0, 0, 0, 1);
-}
-.footer p {
-  margin-left: 50px;
 }
 
 /* How it works */
@@ -211,6 +175,8 @@ button {
   margin: 0 23px;
 }
 
+/* Giveaway (start page) */
+
 .main_page {
   position: absolute;
 
@@ -219,6 +185,41 @@ button {
   top: 176px;
 
   visibility: visible;
+}
+
+/* Footer */
+
+.app__footer {
+  position: absolute;
+
+  width: 1280px;
+  height: 228px;
+  top: 1698px;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+
+  height: 166px;
+  padding-left: 50px;
+  background-color: #F5F5F5;
+}
+.footer_info ul {
+  width: 150px;
+  color: rgba(0, 0, 0, 1);
+
+  margin-right: 252px;
+}
+.footer_info li {
+  list-style-type: none;
+  margin-top: 10px;
+
+  color: rgba(0, 0, 0, 1);
+}
+.footer p {
+  margin-left: 50px;
 }
 
 /* Product */
@@ -294,9 +295,7 @@ button {
 .about_product h2 {
   margin-top: 20px;
 }
-.description {
-  width: 352px;
-}
+
 .product_top {
   display: flex;
   justify-content: space-between;
@@ -309,7 +308,6 @@ button {
 .product_top h3 {
   text-transform: uppercase;
 }
-
 .product_rating {
   display: flex;
   align-items: center;
@@ -323,6 +321,11 @@ button {
   width: 88px;
   height: 16px;
 }
+
+.description {
+  width: 352px;
+}
+
 .items {
   font-size: 16px;
   text-transform: uppercase;
@@ -332,6 +335,7 @@ button {
   width:144px;
   background: rgba(228, 0, 0, 1);
 }
+
 .buy_product {
   display: flex;
   align-items: center;
@@ -683,31 +687,6 @@ button {
     top: 70px;
   }
 
-  /* Footer */
-
-  .app__footer {
-    width: 320px;
-    height: 261px;
-    top: 1677px;
-  }
-
-  .footer_info {
-    flex-wrap: wrap;
-
-    height: 214px;
-    padding-left: 20px;
-  }
-  .footer_info ul {
-    width: 116px;
-
-    margin-right: 34px;
-  }
-  .footer p {
-    margin-left: 20px;
-
-    text-align: center;
-  }
-
   /* How it works */
 
   .how_it_work {
@@ -754,6 +733,33 @@ button {
   .steps .rights, .steps a {
     margin: 0 23px;
   }
+
+  /* Footer */
+
+  .app__footer {
+    width: 320px;
+    height: 261px;
+    top: 1677px;
+  }
+
+  .footer_info {
+    flex-wrap: wrap;
+
+    height: 214px;
+    padding-left: 20px;
+  }
+  .footer_info ul {
+    width: 116px;
+
+    margin-right: 34px;
+  }
+  .footer p {
+    margin-left: 20px;
+
+    text-align: center;
+  }
+
+  /* Giveaway (start page) */
 
   .main_page {
     width: 320px;
@@ -1066,5 +1072,4 @@ button {
   .step_five__step_bar {
     content: url("content/h_step_five.png");
   }
-
 }

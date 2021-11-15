@@ -6,16 +6,16 @@
 
 Внешний вид страницы изменяется в зависимости от ширины браузера
 
-![Ширина окна 1280px](public/site_example/site_example_1_1.PNG)
+![alt text](public/site_example/site_example_1_1.PNG "Ширина окна 1280px")
 
-![Ширина окна 320px (первое изображение)](public/site_example/site_example_1_2_1.PNG)
+![alt text](public/site_example/site_example_1_2_1.PNG "Ширина окна 320px (первое изображение)")
 
-![Ширина окна 320px (второе изображение)](public/site_example/site_example_1_2_2.PNG)
+![alt text](public/site_example/site_example_1_2_2.PNG "Ширина окна 320px (второе изображение)")
 
 ## Переключение по этапам
 
 При нажатии на этап в панели этапов снизу будет осуществлен переход на одну из страниц
 
-![Этап 1](public/site_example/site_example_2_1.PNG)
+![alt text](public/site_example/site_example_2_1.PNG "Этап 1")
 
-![Этап 2](public/site_example/site_example_2_2.PNG)
+![alt text](public/site_example/site_example_2_2.PNG "Этап 2")

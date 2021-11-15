@@ -28,7 +28,7 @@ class App extends Component {
           <div className="content__step_one step_one">
             <img className="step_one__step_bar step_bar" alt="step_1"/>
             <div className="step_one__info info">
-                <h1>Step 1</h1>
+                <h1 className="step_number">Step 1</h1>
                 <h1>Lorem ipsum dolor sit amet</h1>
                 <p>Aliquam urna arcu, scelerisque vel viverra sed, pellentesque sit amet metus. Curabitur at luctus massa. Vestibulum pretium sem tortor, vitae mattis odio accumsan vitae. Fusce id luctus erat:</p>
                 <ol>
@@ -61,14 +61,14 @@ class App extends Component {
           <div className="content__step_two step_two">
             <img className="step_two__step_bar step_bar" alt="step_2"/>
             <div className="step_two__info info">
-                <h1>Step 2</h1>
+                <h1 className="step_number">Step 2</h1>
                 <h1>Share Facebook post</h1>
                 <p>To participate in this giveaway please share this giveaway offer with your friends. Not only your friends will appreciate this offer but you will receive $10 Amazon Gift Card for each of your friends that participates in this giveaway!</p>
                 <button>continue</button>
             </div>
             <img className="step_two__facebook_post facebook_post" src="/images/facebook_post.png" alt="bg_img"/>
             <img className="step_two__press_here_block press_here_arrow" alt="press_here_arrow_img"/>
-            <p className="step_two__press_here_block press_here_text">Press Here</p>
+            <p className="step_two__press_here_block press_here_text">Press here</p>
           </div>
         );
         ReactDOM.render(element, document.querySelector('.content'));
@@ -78,7 +78,7 @@ class App extends Component {
           document.querySelector('.app__footer').setAttribute('style','top: 1275px');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 750px;');
+          document.querySelector('.how_it_work').setAttribute('style','top: 740px;');
           document.querySelector('.app__footer').setAttribute('style','top: 1310px');
         };
 
@@ -92,7 +92,7 @@ class App extends Component {
           <div className="content__step_three step_three">
             <img className="step_three__step_bar step_bar" alt="step_3"/>
             <div className="step_three__info info">
-                <h1>Step 3</h1>
+                <h1 className="step_number">Step 3</h1>
                 <h1>Amazon Prime</h1>
                 <p>Do you have an Amazon Prime account?</p>
                 <p>To be able to participate in this giveaway you need to have Amazon Prime.</p>
@@ -112,7 +112,7 @@ class App extends Component {
           document.querySelector('.app__footer').setAttribute('style','top: 1275px');
         }
         else {
-          document.querySelector('.how_it_work').setAttribute('style','top: 455px;');
+          document.querySelector('.how_it_work').setAttribute('style','top: 440px;');
           document.querySelector('.app__footer').setAttribute('style','top: 1015px');
         };
 
@@ -126,7 +126,7 @@ class App extends Component {
           <div className="content__step_four step_four">
             <img className="step_four__step_bar step_bar" alt="step_4"/>
             <div className="step_four__info info">
-                <h1>Step 4</h1>
+                <h1 className="step_number">Step 4</h1>
                 <h1>How to Buy a Product with 100% BONUS!</h1>
                 <ul className="buy_product_ways">
                     <li className="list_markers"><img className="list_markers_images" src="/images/number one.png" alt="n one"/><p>You need to Buy our Product on Amazon at the specified price $20.89!</p></li>
@@ -165,12 +165,12 @@ class App extends Component {
           <div className="content__step_five step_five">
             <img className="step_five__step_bar step_bar" alt="step_5"/>
             <div className="step_five__info info">
-                <h1>Step 5</h1>
+                <h1 className="step_number">Step 5</h1>
                 <h1>Buy and Provide order ID to our Manager</h1>
                 <p>Click the button GO TO AMAZON and Buy a Product</p>
                 <button className="amazon_button">Go to amazon <img src="/images/amazon_ico.png" alt="amazon_ico"/></button>
                 <p>Click on the button below and Provide Order ID to our Manager in FB Messenger</p>
-                <p>(If you have any questions, you can ask them to our Manager)</p>
+                <p className="footnote">(If you have any questions, you can ask them to our Manager)</p>
                 <button>provide order id</button>
             </div>
             <img className="step_five__picture_giveaway picture_giveaway" src="/images/picture_giveaway_color 1.png" alt="bg_img"/>

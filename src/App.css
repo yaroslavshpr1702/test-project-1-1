@@ -42,9 +42,6 @@ p, li {
   text-align: left;
   color: rgba(0, 0, 0, 0.6);
 }
-li {
-  list-style-type: none;
-}
 ul {
   padding-left: 0;
 }
@@ -126,6 +123,7 @@ button {
 .footer_info {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 
   height: 166px;
   padding-left: 50px;
@@ -138,19 +136,13 @@ button {
   margin-right: 252px;
 }
 .footer_info li {
+  list-style-type: none;
+  margin-top: 10px;
+
   color: rgba(0, 0, 0, 1);
 }
 .footer p {
   margin-left: 50px;
-}
-.accept_button {
-  width: 179px;
-}
-.disaccept_button {
-  width: 179px;
-  background: rgba(0, 0, 0, 0.6);
-
-  margin-left: 21px;
 }
 
 /* How it works */
@@ -204,6 +196,8 @@ button {
   height: 50%;
 }
 .step p {
+  text-align: center;
+
   font-weight: bold;
 }
 .rights, .rights_separators {
@@ -445,6 +439,9 @@ button {
   width: 1180px;
   height: 560px;
 }
+.step_one__info{
+  margin-top: -10px;
+}
 
 /* Step 2 */
 
@@ -456,10 +453,14 @@ button {
   top: 289px;
   left: 67px;
 }
+.step_two__info {
+  margin-top: 30px;
+}
 .facebook_post {
   width: 478px;
   height: 443px;
 
+  margin-top: 21px;
   margin-left: 23px;
 }
 .press_here_arrow {
@@ -467,16 +468,16 @@ button {
 
   content: url("content/press_here_arrow_1.png");
 
-  top: 453px;
-  left: 551px;
+  top: 473px;
+  left: 565px;
   width: 257px;
   height: 58px;
 }
 .press_here_text {
   position: absolute;
 
-  top: 469.78px;
-  left: 700px;
+  top: 445px;
+  left: 632px;
 
   font-weight: bold;
   font-size: 24px;
@@ -498,6 +499,14 @@ button {
 .step_three__buttons {
   display: flex;
 }
+.step_three__buttons button {
+  width: 179px;
+}
+.disaccept_button {
+  background: rgba(0, 0, 0, 0.6);
+
+  margin-left: 21px;
+}
 
 /* Step 4 */
 
@@ -509,13 +518,23 @@ button {
   top: 289px;
   left: 67px;
 }
+.step_four__info {
+  margin-top: -90px;
+}
 .buy_product_ways {
+  margin-bottom: 40px;
+
   padding-left: 15px;
 }
 .list_markers {
   display: flex;
   align-items: center;
+
+  margin: 20px 0;
 }
+.list_markers p{
+  margin: 0;
+}  
 .list_markers_images {
   width: 28px;
   height: 28px;
@@ -540,8 +559,19 @@ button {
   top: 289px;
   left: 67px;
 }
+.step_five__info {
+  margin-top: -50px;
+}
+.step_five h1 {
+  width: 560px;
+}
 .amazon_button {
   margin-bottom: 56px;
+}
+.footnote {
+  font-style: italic;
+
+  font-size: 14px;
 }
 
 /* Steps' items */
@@ -551,8 +581,13 @@ button {
 
   margin-left: 135px;
 }
-
+.step_number {
+  color: rgba(0, 0, 0, 0.6);
+}
 .picture_giveaway {
+  margin-top: -6px;
+  margin-left: 20px;
+
   width: 477px;
   height: 501px;
 }
@@ -587,25 +622,33 @@ button {
   h1 {
     font-size: 20px;
     text-align: left;
+
+    line-height: 24px;
   }
   h2 {
     font-size: 18px;
     text-align: left;
+    
+    line-height: 18px;
   }
   h3 {
     font-size: 12px;
     text-align: left;
+    
+    line-height: 15px;
   }
   p, li {
     font-size: 12px;
     text-align: left;
+    
+    line-height: 15px;
   }
   
   button {  
-    font-size: 16px;
+    font-size: 14px;
   
-    width: 380px;
-    height: 60px;
+    width: 280px;
+    height: 40px;
   }
 
   /* Header */
@@ -628,6 +671,9 @@ button {
   .header__text p {
     font-size: 12px;
     line-height: 15px;
+    
+    width: 281px;
+
     text-align: center;
   }
   .header__banner_picture {
@@ -640,30 +686,26 @@ button {
   /* Footer */
 
   .app__footer {
-    width: 1280px;
+    width: 320px;
     height: 261px;
     top: 1677px;
   }
 
   .footer_info {
+    flex-wrap: wrap;
+
     height: 214px;
-    padding-left: 50px;
+    padding-left: 20px;
   }
   .footer_info ul {
-    width: 150px;
+    width: 116px;
 
-    margin-right: 252px;
+    margin-right: 34px;
   }
   .footer p {
-    margin-left: 50px;
-  }
-  .accept_button {
-    width: 179px;
-  }
-  .disaccept_button {
-    width: 179px;
+    margin-left: 20px;
 
-    margin-left: 21px;
+    text-align: center;
   }
 
   /* How it works */
@@ -675,12 +717,13 @@ button {
   .how_it_work h1 {
     margin-left: 20px;
   }
-  /* .how_it_work.text_hide {
-    top: 1117px;
+  .how_it_work.text_hide {
+    top: 1102px;
   }
+
   .how_it_work.text_show {
     top: 1364px;
-  } */
+  }
 
   .steps {
     flex-direction: column;
@@ -713,7 +756,7 @@ button {
   }
 
   .main_page {
-    width: 1280px;
+    width: 320px;
     height: 1132px;
     top: 176px;
   }
@@ -726,7 +769,7 @@ button {
     top: 4px;
     left: 20px;
 
-    width: 1180px;
+    width: 280px;
     height: 560px;
   }
 
@@ -768,10 +811,11 @@ button {
     width: 294px;
   }
   .about_product h2 {
-    margin-top: 20px;
+    width: 280px;
+    margin-top: 10px;
   }
   .description {
-    width: 352px;
+    width: 280px;
   }
   .product_top {
     margin-top: 9px;
@@ -786,27 +830,27 @@ button {
     margin: 0 0 0 10px;
   }
   .rating_stars{
-    width: 88px;
-    height: 16px;
+    width: 66px;
+    height: 12px;
   }
   .items {
-    font-size: 16px;
+    font-size: 12px;
 
-    height:32px;
-    width:144px;
+    width: 103px;
+    height: 22px;
   }
   .buy_product {
-    width: 380px;
+    width: 294px;
   }
   .select_button {
-    font-size: 18px;
-    width: 380px;
+    font-size: 14px;
+    width: 294px;
     margin: 20px 0;
   }
   .product__prices {
-    margin-top: 30px;
-    height: 57px;
-    width: 380px;
+    margin-top: 20px;
+    height: 37px;
+    width: 294px;
   }
   .price {
     margin-bottom: 0;
@@ -816,14 +860,14 @@ button {
     margin-bottom: 0;
   }
   .amazon_prime_logo {
-    width: 200px;
-    height: 34.65px;
+    width: 160  px;
+    height: 27.72px;
   }
 
   /* Product Overview (MainContent) */
 
   .overview {
-    top: 650px;
+    top: 600px;
     left: 20px;
 
     width: 280px;
@@ -837,8 +881,8 @@ button {
     margin: 20px 0 0
   }
   .overview p {
-    margin: 10px 0;
-    width: 650px;
+    margin: 5px 0;
+    width: 280px;
   }
   .overview ul {
     padding: 0 17.5px;
@@ -860,7 +904,7 @@ button {
     visibility: hidden;
   }
   .hidden_text {
-    top: 390px;
+    top: 290px;
     
     visibility: hidden;
   }
@@ -879,7 +923,7 @@ button {
     top: 180px;
     left: 15px;
 
-    width: 1180px;
+    width: 280px;
     height: 560px;
   }
 
@@ -891,24 +935,31 @@ button {
     top: 180px;
     left: 15px;
   }
+  .step_two__info {
+    margin-top: 10px;
+  }
+  .step_two__info button{
+    margin-top: 300px;
+  }
   .facebook_post {
     width: 243px;
     height: 225px;
 
+    margin-top: -334px;
     margin-left: 23px;
   }
   .press_here_arrow {
     content: url("content/press_here_arrow_3.png");
 
-    left: 217px;
-    top: 613px;
+    left: 87px;
+    top: 433px;
     
     width: 115px;
     height: 26px;
   }
   .press_here_text {
-    top: 644px;
-    left: 117px;
+    left: 102px;
+    top: 447px;
   
     font-size: 18px;
     line-height: 22px;
@@ -920,7 +971,16 @@ button {
     flex-direction: column;
     
     top: 180px;
-    left: 15px;
+    left: 20px;
+  }
+  .step_three__buttons button {
+    font-size: 13px;
+
+    width: 130px;
+  }
+  .step_three__info {
+    
+    margin-top: 10px;
   }
 
   /* Step 4 */
@@ -929,19 +989,25 @@ button {
     flex-direction: column;
     
     top: 180px;
-    left: 15px;
+    left: 20px;
   }
-  .buy_product_ways {
-    padding-left: 15px;
+  .step_four__info{
+    margin-top: 10px;
   }
+  .list_markers {
+    margin: 10px 0;
+  }  
+  .list_markers p{
+    margin: 0;
+  }  
   .list_markers_images {
-    width: 28px;
-    height: 28px;
+    width: 20px;
+    height: 20px;
 
     margin-right: 13px;
   }
   .get_offer_block {
-    width: 380px;
+    width: 280px;
   }
 
   /* Step 5 */
@@ -950,10 +1016,19 @@ button {
     flex-direction: column;
     
     top: 180px;
-    left: 15px;
+    left: 20px;
+  }
+  .step_five__info{
+    margin-top: 10px;
+  }
+  .step_five h1 {
+    width: 240px;
   }
   .amazon_button {
-    margin-bottom: 56px;
+    margin-bottom: 20px;
+  }
+  .footnote {
+    font-size: 10px;
   }
 
   /* Steps' items */

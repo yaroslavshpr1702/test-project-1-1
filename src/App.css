@@ -670,16 +670,17 @@ button {
 
   .how_it_work {
     left: 0;
+    top: 1117px;
   }
   .how_it_work h1 {
     margin-left: 20px;
   }
-  .how_it_work.text_hide {
+  /* .how_it_work.text_hide {
     top: 1117px;
   }
   .how_it_work.text_show {
     top: 1364px;
-  }
+  } */
 
   .steps {
     flex-direction: column;

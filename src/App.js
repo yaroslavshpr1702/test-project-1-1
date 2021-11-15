@@ -5,16 +5,19 @@ import ReactDOM from 'react-dom';
 
 //function App() {
 class App extends Component {
-  GetStep(step) {
-    var isVertical = true;
+  IsWindowVertical() {
     if (window.innerWidth < 321) {
       console.log('Window (T) width:',window.innerWidth);
-      isVertical = false;
+      return false;
     }
     else {
       console.log('Window (PC) width:',window.innerWidth);
-      isVertical = true;
+      return true;
     };
+  };
+
+  GetStep(step) {
+    var isVertical = this.IsWindowVertical();
     console.log(isVertical);
 
     switch (step) {
@@ -193,10 +196,20 @@ class App extends Component {
   ReadMoreFunction(e) {
     e.preventDefault();
     console.log('Read more');
+    
+    var isVertical = this.IsWindowVertical();
 
     document.querySelector('.hidden_text').classList.toggle('text_show');
     document.querySelector('.read_more').classList.toggle('toggled');
-    document.querySelector('.how_it_work').classList.toggle('text_show');
+
+    if (isVertical) {
+      document.querySelector('.how_it_work').setAttribute('style','top: 1608px');
+      document.querySelector('.app__footer').setAttribute('style','top: 1998px');
+    }
+    else {
+      document.querySelector('.how_it_work').setAttribute('style','top: 1364px');
+      document.querySelector('.app__footer').setAttribute('style','top: 1924px');
+    };
   };
 
   render() {
